@@ -1,0 +1,83 @@
+
+.banner-main-heading {
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 130%;
+    color: #396C03;
+    margin-bottom: 20px;
+}
+
+.orange-dot {
+    color: #FF8B00;
+}
+
+.banner-sub-heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #676767;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    position: relative;
+    position: relative;
+    width: 714px;
+    height: 69px;
+}
+
+.search-field {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(57, 108, 3, 0.3);
+    background-color: transparent;
+    border-radius: 120px;
+    padding: 0 20px 0 70px;
+    color: black;
+}
+
+.search-field::placeholder {
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 170%;
+    color: #C7C7C7;
+}
+
+.search-form::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-color: #FF8B00;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.banner-submit-btn {
+    position: absolute;
+    width: 210.56px;
+    height: 68.19px;
+    border-radius: 200px;
+    right: 0;
+    background-color: #396C03;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 170%;
+}
+
+.banner-submit-btn::before {
+    content: url('../../images/search.svg');
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 18px;
+    left: 35px;
+}
