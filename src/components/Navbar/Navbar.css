@@ -14,10 +14,8 @@
 .navBarLinks {
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 18px;
     width: 90px;
     height: 40px;
-    line-height: 40px;
     border-radius: 20px;
     margin-top: 15px;
     text-align: center;
@@ -31,13 +29,9 @@
 }
 
 .button {
-    padding: 12px 50px;
-    width: 154px;
-    height: 58px;
     background-color: #396C03!important;
     border-radius: 225px;
     font-weight: 500;
-    font-size: 20px;
     color: #FFFFFF;
     transition: all .2s;
 }
@@ -45,13 +39,10 @@
 .cart-icon {
     position: relative;
     background-color: #396C03;
-    height: 60px;
-    width: 60px;
     border-radius: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
     margin-left: 20px;
     cursor: pointer;
     transition: all .2s;
@@ -74,4 +65,13 @@
     font-size: 16px;
     line-height: 170%;
     color: #FFFFFF;
+}
+
+.navbar-sm {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    z-index: 100;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

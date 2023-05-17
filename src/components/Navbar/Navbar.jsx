@@ -54,9 +54,7 @@ const Navbar = () => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 navBarLinks' : 'navBarLinks hover:bg-gray-700 hover:text-white',
-                        )}
+                        className='navBarLinks hover:bg-gray-700 hover:text-white text-sm leading-sm pt-[10px] lg:text-[18px] lg:leading-[18px]'
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
@@ -66,23 +64,23 @@ const Navbar = () => {
                   <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                     <button
                       type="button"
-                      className="button"
+                      className="button px-4 py-2 text-sm lg:w-[154px] lg:h-[58px] lg:text-[20px]"
                     >
                       Login
                     </button>
-                    <div className='cart-icon'>
-                        <span className='cart-number'>0</span>
-                        <img src={cart} alt="" />
-                      </div>
+                    <div className='cart-icon h-10 w-10 lg:h-[60px] lg:w-[60px]'>
+                      <span className='cart-number'>0</span>
+                      <img className='w-5 ' src={cart} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <Disclosure.Panel className="md:hidden">
+          <Disclosure.Panel className="md:hidden fixed navbar-sm ">
             {/* Mobile dropdown button and list of navigation */}
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="space-y-1 px-2 pb-3 pt-2 bg-light-900">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -90,24 +88,24 @@ const Navbar = () => {
                   href={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    'block rounded-md px-3 py-2 text-sm font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
               ))}
-              <div>
-                <div className='cart-icon my-5'>
-                  <span className='cart-number'>0</span>
-                  <img src={cart} alt="" />
-                </div>
+              <div className="">
                 <button
                   type="button"
-                  className="button"
+                  className="button px-4 py-2 text-sm lg:w-[154px] lg:h-[58px] lg:text-[20px]"
                 >
                   Login
                 </button>
+                <div className='cart-icon h-10 w-10 lg:h-[60px] lg:w-[60px] mt-5 ml-0'>
+                  <span className='cart-number'>0</span>
+                  <img className='w-5 ' src={cart} alt="" />
+                </div>
               </div>
             </div>
           </Disclosure.Panel>

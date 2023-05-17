@@ -1,9 +1,7 @@
-
 .banner-main-heading {
     font-family: 'Merienda';
     font-style: normal;
     font-weight: 700;
-    font-size: 65px;
     line-height: 130%;
     color: #396C03;
     margin-bottom: 20px;
@@ -17,17 +15,9 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
     line-height: 140%;
     color: #676767;
     margin-bottom: 20px;
-}
-
-.search-form {
-    position: relative;
-    position: relative;
-    width: 714px;
-    height: 69px;
 }
 
 .search-field {
@@ -37,40 +27,19 @@
     border: 2px solid rgba(57, 108, 3, 0.3);
     background-color: transparent;
     border-radius: 120px;
-    padding: 0 20px 0 70px;
     color: black;
 }
 
 .search-field::placeholder {
-    margin-left: 30px;
     font-weight: 500;
-    font-size: 22px;
     line-height: 170%;
     color: #C7C7C7;
 }
 
-.search-form::after {
-    content: "";
-    height: 50px;
-    width: 50px;
-    border-radius: 100px;
-    background-color: #FF8B00;
+.round {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-}
-
-.banner-submit-btn {
-    position: absolute;
-    width: 210.56px;
-    height: 68.19px;
-    border-radius: 200px;
-    right: 0;
-    background-color: #396C03;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 170%;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .banner-submit-btn::before {
@@ -80,4 +49,75 @@
     width: 20px;
     top: 18px;
     left: 35px;
+}
+
+.tik-mark {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(6px);
+    border-radius: 8.86914px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-35%);
+}
+
+.tik-mark-sm {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.3) 100%);
+    backdrop-filter: blur(6px);
+    border-radius: 100%;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.banner-text-leaf-one {
+    transform: translate(0, 0);
+    animation-name: leaf1;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.95, 0.72, 0.665, 0.8);
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
+@keyframes leaf1 {
+    0% {transform: translate(-40%, 40%) scale(1);}
+    50% {transform: translate(-10%, -10%) scale(1.2);}
+    100% {transform: translate(-40%, 40%) scale(1);}
+}
+
+.banner-text-leaf-two {
+    transform: translate(0, 0);
+    animation-name: leaf2;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.875, 0.685, 0.72, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
+
+@keyframes leaf2 {
+    0% {transform: translate(-10%, 15%) }
+    50% {transform: translate(-10%, -10%) }
+    100% {transform: translate(-10%, 15%)}
+}
+
+.banner-text-leaf-three {
+    transform: translate(0, 0);
+    animation-name: leaf3;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.85, 0.82, 0.165, .8);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
+
+@keyframes leaf3 {
+    0% {transform: rotate(0deg) scale(0.9);}
+    100% {transform: rotate(15deg) scale(1.1);}
 }

@@ -1,0 +1,27 @@
+.bike-container {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    background-image: url('../../images/illustration.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: end;
+    background-position: 100%;
+}
+
+.bike {
+    z-index: 100; 
+    animation: bikeAnimate 2s infinite;
+    animation-timing-function: cubic-bezier(0.8, .5, 0.3, 0.1)
+}
+
+@keyframes bikeAnimate {
+    0% {left: 0; bottom: 0;}
+    100% {margin-left: 100%; bottom: 10%; transform: rotate(-15deg);}
+}
+
+
